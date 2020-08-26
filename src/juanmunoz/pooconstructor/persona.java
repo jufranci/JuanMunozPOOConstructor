@@ -9,12 +9,11 @@ public class persona {
         this.dni = dni;        
     }
     public persona (int dni, String nombre){
-        this.dni = dni;
+        this(dni);
         this.nombre = nombre;
     }
     public persona (int dni, String nombre, String apellido){
-        this.dni = dni;
-        this.nombre = nombre;
+        this(dni,nombre);
         this.apellido = apellido;
     }
     public void imprimir(){
